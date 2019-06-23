@@ -7,7 +7,7 @@ The application structure is as follows.
 #### 1) Build Server Side
 
 ```
-$ cd server-side
+$ cd server-user-management
 $ gradlew bootJar
 $ gradlew bootRun
 ```
@@ -15,7 +15,7 @@ $ gradlew bootRun
 #### 2) Build and run client side
 
 ```
-$ cd client-side
+$ cd client-user-management
 $ ng serve
 ```
 
