@@ -2,6 +2,7 @@ package com.sha.serverusermanagement.config;
 
 import com.sha.serverusermanagement.jwt.JwtAuthorizationFilter;
 import com.sha.serverusermanagement.jwt.JwtTokenProvider;
+import com.sha.serverusermanagement.service.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,7 +25,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     private JwtTokenProvider tokenProvider;
 
     @Autowired
-    private UserDetailsService userDetailsService;
+    private UserDetailsServiceImpl userDetailsService;
 
     @Bean
     public PasswordEncoder passwordEncoder(){
